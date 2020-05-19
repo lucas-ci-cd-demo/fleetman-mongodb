@@ -2,11 +2,11 @@ pipeline {
    agent any
 
    environment {
-      SERVICE_NAME = "fleetman-api-gateway"
+      SERVICE_NAME = "fleetman-mongodb"
       ORGANIZATION_NAME = "lucas-ci-cd-demo"
       YOUR_DOCKERHUB_USERNAME = "danieluke"
 
-     SERVICE_NAME = "fleetman-mongodb"     
+          
      REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
    }
 
